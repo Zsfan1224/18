@@ -95,28 +95,32 @@
       text-align: center;
       width: 100%;
       font-size: 0.9em;
-      color: #fff; /* 保持文字为白色 */
-      background-color: #fff;
+      color: #000; /* 强制为黑色文字 */
+      background-color: #fff; /* 背景纯白色 */
       padding: 10px 0;
       border-radius: 10px;
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* 圆润边框和轻微阴影 */
+      z-index: 9999; /* 提升层级 */
       white-space: nowrap; /* 防止换行 */
     }
+    .footer p {
+      font-weight: bold;
+      margin: 0;
+      line-height: 1.5em;
+    }
     .footer a {
-      color: #ff4b2b;
+      color: #ff4b2b; /* 强调颜色 */
       text-decoration: none;
       font-weight: bold;
     }
     .footer a:hover {
       text-decoration: underline;
     }
-    .footer p {
-      font-weight: bold;
-      margin: 0;
-    }
     .footer img {
       vertical-align: middle;
       margin-right: 5px;
+      width: 20px;
+      height: auto;
     }
   </style>
 </head>
