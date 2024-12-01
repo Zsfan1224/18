@@ -57,6 +57,7 @@
       cursor: pointer;
       transition: all 0.3s ease;
       color: #fff;
+      white-space: nowrap; /* 禁止文字换行 */
     }
     .overlay-button#yesButton {
       background: linear-gradient(to right, #ff416c, #ff4b2b);
@@ -130,8 +131,8 @@
   <h1 class="overlay-title">请确认年龄</h1>
   <p class="overlay-subtitle">本站内容仅限成年人访问，请确认您的年龄。</p>
   <div class="overlay-buttons">
-    <button class="overlay-button" id="yesButton">已满18岁</button>
-    <button class="overlay-button" id="noButton">未满18岁</button>
+    <button class="overlay-button" id="yesButton">已满 18 岁</button>
+    <button class="overlay-button" id="noButton">未满 18 岁</button>
   </div>
 </div>
 
