@@ -126,7 +126,7 @@
 <body>
 
 <div id="overlay">
-  <h1 class="overlay-title">您已满18岁了吗？</h1>
+  <h1 class="overlay-title">请确认年龄</h1>
   <p class="overlay-subtitle">本站内容仅限成年人访问，请确认您的年龄。</p>
   <div class="overlay-buttons">
     <button class="overlay-button" id="yesButton">已满18岁</button>
@@ -135,7 +135,7 @@
 </div>
 
 <div id="content">
-  <video id="video" controls>
+  <video id="video" autoplay>
     <source src="" type="video/mp4">
     您的浏览器不支持HTML视频。
   </video>
@@ -161,8 +161,10 @@
   function loadVideo(videoUrl) {
     document.getElementById('overlay').style.display = 'none';
     document.getElementById('content').style.display = 'block';
-    document.getElementById('video').querySelector('source').src = videoUrl;
-    document.getElementById('video').load();
+    const videoElement = document.getElementById('video');
+    videoElement.querySelector('source').src = videoUrl;
+    videoElement.load();
+    videoElement.play(); // 自动播放视频
   }
 </script>
 
